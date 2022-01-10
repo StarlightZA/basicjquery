@@ -1,0 +1,52 @@
+	//normal html one
+	<html>
+		<head>
+			<title>Variables</title>
+
+		</head>
+		<body>
+			<script type = "text/javascript">
+				
+			</script>
+		</body>
+	</html>
+	
+	
+	
+	
+	<script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+// javascript one	
+	<html>
+    <head>
+        <title>Regular Expressions</title>
+        <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+        <script type = "text/javascript">
+
+        
+        </script>
+    </body>
+</html>
+
+//jquery one
+<html>
+    <head>
+        <title>Regular Expressions</title>
+        <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type src = "jquery-ui/jquery-ui.js"></script>
+        <link href = "jquery-ui/jquery-ui.css" rel = "stylesheet">
+
+
+    </head>
+    <body>
+
+        <script type = "text/javascript">
+
+        
+        </script>
+    </body>
+</html>

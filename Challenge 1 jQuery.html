@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Challenge 1</title>
+        <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style type="text/css">
+
+            #hidden
+            {
+                display:none;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <p id = "hide">This is a paragraph</p>
+        <button id = "butt">Click Me</button>
+        
+        <!-- <p id = "hidden">This text was hidden</p>
+        <button id = "fadeIn">Fade in Text</button> -->
+        
+        <p id = "toggleText">This text will be toggled</p>
+        <button id = "toggle">Toggle Text</button>
+
+        <script type = "text/javascript">
+            
+            $("#butt").click(function()
+            {
+                $("#hide").fadeOut();
+            })
+
+            // $("#fadeIn").click(function()
+            // {
+            //     $("#hidden").fadeIn();
+            // })
+            
+            $("#toggle").click(function()
+            {
+                if($("#toggleText").css("display") == "none")
+                {
+                    $("#toggleText").fadeIn();
+                }
+                else
+                {
+                    $("#toggleText").fadeOut();
+                }
+            })
+            //another method for the above
+            // var textShowing = true;
+
+            // $("#toggle").click(function()
+            // {
+            //     if(textShowing)
+            //     {
+            //         $("#toggleText").fadeOut( function()
+            //         {
+            //             textShowing = false;
+            //         });
+            //     }
+            //     else
+            //     {
+            //         $("#toggleText").fadeIn( function()
+            //         {
+            //             textShowing = true;
+            //         });
+            //     }
+            // })
+            
+        </script>
+    </body>
+</html>

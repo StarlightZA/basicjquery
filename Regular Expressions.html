@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Regular Expressions</title>
+        <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+        <script type = "text/javascript">
+
+            var regex = /Great/i; //says this is a regex // i makes it case insensitive
+            //var regex = /e/g - returns every instance e is in the string- g = global
+            var string = "Regex is grEAt!";
+
+            //does the word is appear in the string regex is great
+            var  result = string.match(regex);
+            
+            alert(result); //will return whats in the string
+
+        </script>
+    </body>
+</html>

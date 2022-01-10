@@ -1,0 +1,27 @@
+<html>
+<!-- 135 video under jquery-->
+<!-- ajax only on web browser, cant be used on local host-->
+<head>
+    <title>Ajax</title>
+    <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p></p>
+    <script type="text/javascript">
+    //.ajax more powerful than the .get then url for text file
+        $.ajax("info.txt")
+            .done(function (data) {
+
+                $("p").html(data);
+
+            })
+            .fail(function () {
+
+                alert("Could not get data");
+
+            });
+    </script>
+</body>
+
+</html>

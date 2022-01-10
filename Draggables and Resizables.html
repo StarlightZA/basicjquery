@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Draggables and Resizables</title>
+        <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type src = "jquery-ui/jquery-ui.js"></script>
+        <link href = "jquery-ui/jquery-ui.css" rel = "stylesheet">
+
+        <style type="text/css">
+            #resizable
+            {
+                width:100px;
+                height:100px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "draggable"> Drag me! vertically</div>
+
+        <div style ="width: 400px; height: 400px; background-color:lightblue">
+
+            <span><b>Im stuck in the box!</b></span>
+
+        </div>
+
+        <div id="resizable"></div>
+
+        <script type = "text/javascript">
+            //making text only draggable vertically
+            $( "#draggable" ).draggable({axis: "y"});
+        
+            //dragging it around in a certain area
+            $( "span" ).draggable({ containment: "parent" });
+
+            //resizing the div
+            $( "#resizable" ).resizable();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+	<html>
+		<head>
+            <title>Jquery Start</title>
+            <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!--can also download Jquery and have the link local-->
+
+            <style type = text/css>
+
+                #circle
+                {
+                    width:200px;
+                    height:200px;
+                    background-color:green;
+                    border-radius:50%;
+                    margin:10px;
+                }
+
+                .square
+                {
+                    width:200px;
+                    height:200px;
+                    background-color:red;
+                    margin:10px;
+                }
+
+            </style>
+		</head>
+		<body>
+            <div id ="circle"></div>
+            <p> this is some text </p>
+
+            <div class = "square"></div>
+            <div class = "square"></div>
+
+            <iframe src = "http://www.codestars.com/"> </iframe>
+            
+			<script type = "text/javascript">
+                //checks if jquery is installed correctly by looking for the jquery type
+                
+                // if(typeof jQuery == "undefined") 
+                // {
+                //     alert("not installed");
+                // }
+                // else
+                // {
+                //     alert("installed");
+                // }
+
+                //all jquery starts with a string and
+                //select the circle, do something when its clicked, then create a function    
+                $("#circle").click(function() //if you want to do the square, use .square or div for anything with the div tag
+                {
+                    //alert("circle was clicked");
+                    $("p").html("This text has changed"); //change the text
+                    //alert($("p").html()); //which would get the html content and alert it
+                })
+
+                $(".square").hover(function() 
+                {
+                    
+                    //$("p").html("This text has changed"); change the text
+                    alert($("p").html()); 
+
+                    //changes an attribute of all the iframe tags
+                    $("iframe").attr("src", "https://www.steamwell.co.za");
+                })
+
+			</script>
+		</body>
+	</html>

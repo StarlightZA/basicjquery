@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Styles and Events</title>
+        <script  type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style  type="text/css">
+        
+        #circle
+                {
+                    width:200px;
+                    height:200px;
+                    background-color:green;
+                    border-radius:50%;
+                    margin:10px;
+                }
+
+        .square
+                {
+                    width:200px;
+                    height:200px;
+                    background-color:red;
+                    margin:10px;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="circle"></div>
+
+        <div class = "square"></div>
+        <div class = "square"></div>
+
+        <script type = "text/javascript">
+            
+            $("#circle").click(function()
+            {
+                //change the attributes
+                $("#circle").css("width","700px");
+                $("#circle").css("background-color","blue");
+
+                //get the attribute
+                //alert($("body").css("width"));
+
+            })
+
+            // $(".square").click(function()
+            // {
+            //     $(".square").css("display","none");
+
+            // })
+
+            $("div").click(function()
+            {
+                //$(this).css("display","none"); //specific div
+
+            //     if($(this).attr("id") == "circle")
+            //     {
+            //         alert("you clicked on a circle");
+            //     }
+            //    else
+            //    {
+            //        alert("You clicked on a square");
+            //    }
+
+                $(this).fadeOut("slow", function()
+                {
+                    alert("Fade out has finished");
+
+                });
+
+               
+            })
+        </script>
+    </body>
+</html>
